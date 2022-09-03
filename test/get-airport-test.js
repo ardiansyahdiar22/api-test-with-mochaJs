@@ -1,9 +1,9 @@
 const assert = require('chai').expect;
-const page = require('../page/page-get-airport');
+const page = require('../page/page-airport');
 
 describe('Test get data airport', () => {
 
-    it('Get data airport', async() => {
+    it.skip('Get data airport', async() => {
 
         const response = await page.getAirport()
 
@@ -12,12 +12,22 @@ describe('Test get data airport', () => {
         console.log(Isi)
     });
 
-    it('Get data airport by id', async() => {
+    it.skip('Get data airport by id', async() => {
 
         const response = await page.getAirportById()
 
         assert(response.status).to.equal(200)
         var Byid = response.body
         console.log(Byid)
+    });
+
+    it('Get airport favorite By id', async() => {
+
+        const response = await page.getFavoriteById()
+
+        assert(response.status).to.equal(200)
+        var Body = response.body.data
+        console.log(Body)
+        assert(Body.attributes.airport.name).to.equal('Akureyri Airport')
     });
 });
