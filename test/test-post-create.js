@@ -6,7 +6,7 @@ describe.skip("First test create post", () => {
     it("Test create post", async() => {
 
         const response = await page.postCreate()
-        .send({
+        .send({ 
             "name": "morpheus",
             "job": "leader"
         })

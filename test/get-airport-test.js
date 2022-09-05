@@ -1,9 +1,9 @@
 const assert = require('chai').expect;
 const page = require('../page/page-airport');
 
-describe('Test get data airport', () => {
+describe.skip('Test get data airport', () => {
 
-    it.skip('Get data airport', async() => {
+    it('Get data airport', async() => {
 
         const response = await page.getAirport()
 
@@ -12,7 +12,7 @@ describe('Test get data airport', () => {
         console.log(Isi)
     });
 
-    it.skip('Get data airport by id', async() => {
+    it('Get data airport by id', async() => {
 
         const response = await page.getAirportById()
 
