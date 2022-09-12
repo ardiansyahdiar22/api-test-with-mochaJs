@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "directories": {
-    "test": "test",
-    "reports": "open '/Users/code.id/Documents/Coding/mocha-js/reports/mochawesome/mochawesome.html'"
+    "test": "test"
   },
   "scripts": {
     "test": "mocha --timeout 20000"
