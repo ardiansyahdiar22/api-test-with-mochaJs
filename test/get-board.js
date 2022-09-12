@@ -13,7 +13,7 @@ describe('API automation get data board trello', () => {
         })
 
         assert(response.status).to.equal(200)
-        assert(response.body.name).to.equal('add test via postman')
+        assert(response.body.name).to.equal('Add board with mocha JS')
 
     });
 
