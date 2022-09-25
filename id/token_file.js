@@ -3,11 +3,11 @@ const getToken = () => {
 }
 
 const getId = () => {
-    return 'KIX'
+    return 'GKA'
 }
 
 const getIdFav = () => {
-    return '6777'
+    return '6884'
 }
 
 module.exports = {
