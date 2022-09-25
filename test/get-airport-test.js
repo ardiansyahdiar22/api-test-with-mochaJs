@@ -22,6 +22,6 @@ describe.only('Test get data airport', () => {
         const response = await page.getFavoriteById()
 
         assert(response.status).to.equal(200)
-        assert(response.body.data.attributes.airport.name).to.equal('Madang Airport')
+        assert(response.body.data.attributes.airport.name).to.equal('Goroka Airport')
     });
 });
